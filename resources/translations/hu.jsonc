@@ -1,0 +1,13 @@
+{
+  "specme.prefix": "[green][SpecMe][default] ",
+  "specme.disabled": "[red]A beépülő modul funkciói jelenleg le vannak tiltva.[default]",
+  "specme.command_disabled": "[red]Ez a parancs jelenleg le van tiltva.[default]",
+  "specme.player_only": "[red]Ezt a parancsot csak játékosok hajthatják végre.[default]",
+  "specme.already_spec": "[yellow]Már a nézők csapatában vagy.[default]",
+  "specme.moved_spec": "[green]Áthelyezve a nézők közé.[default]",
+  "specme.queued_death": "[lightred]Halálod után a nézők közé kerülsz.[default]",
+  "specme.queued_round_end": "[lightred]A kör végén a nézők közé kerülsz.[default]",
+  "specme.cancelled_queue": "[yellow]A nézői kérelmed visszavonva.[default]",
+  "specme.no_permission": "[red]Nincs jogosultságod a !spec használatához. Használd a [lightred]!specme[red] vagy [lightred]!afk[red] parancsot.[default]",
+  "specme.reloaded": "[lime]A konfiguráció és az állapot sikeresen újratöltve.[default]"
+}

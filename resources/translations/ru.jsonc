@@ -1,0 +1,13 @@
+{
+  "specme.prefix": "[green][SpecMe][default] ",
+  "specme.disabled": "[red]Функции плагина в настоящее время отключены.[default]",
+  "specme.command_disabled": "[red]Эта команда в настоящее время отключена.[default]",
+  "specme.player_only": "[red]Эту команду могут выполнять только игроки.[default]",
+  "specme.already_spec": "[yellow]Вы уже находитесь в команде наблюдателей.[default]",
+  "specme.moved_spec": "[green]Вы перешли в наблюдатели.[default]",
+  "specme.queued_death": "[lightred]Вы будете переведены в наблюдатели после смерти.[default]",
+  "specme.queued_round_end": "[lightred]Вы будете переведены в наблюдатели в конце раунда.[default]",
+  "specme.cancelled_queue": "[yellow]Ваш запрос на переход в наблюдатели отменен.[default]",
+  "specme.no_permission": "[red]У вас нет прав для использования !spec. Используйте [lightred]!specme[red] или [lightred]!afk[red].[default]",
+  "specme.reloaded": "[lime]Конфигурация и состояние успешно перезагружены.[default]"
+}

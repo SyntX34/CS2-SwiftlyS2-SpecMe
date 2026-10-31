@@ -1,0 +1,13 @@
+{
+  "specme.prefix": "[green][SpecMe][default] ",
+  "specme.disabled": "[red]插件功能当前已禁用。[default]",
+  "specme.command_disabled": "[red]该指令当前已禁用。[default]",
+  "specme.player_only": "[red]该指令仅供玩家执行。[default]",
+  "specme.already_spec": "[yellow]你已经在观察者阵营中。[default]",
+  "specme.moved_spec": "[green]你已被移动至观察者阵营。[default]",
+  "specme.queued_death": "[lightred]你将在阵亡后被移动至观察者阵营。[default]",
+  "specme.queued_round_end": "[lightred]你将在回合结束后被移动至观察者阵营。[default]",
+  "specme.cancelled_queue": "[yellow]你的观察者申请已取消。[default]",
+  "specme.no_permission": "[red]你没有权限使用 !spec。请改用 [lightred]!specme[red] 或 [lightred]!afk[red]。[default]",
+  "specme.reloaded": "[lime]配置与状态已成功重新加载。[default]"
+}

@@ -1,0 +1,13 @@
+{
+  "specme.prefix": "[green][SpecMe][default] ",
+  "specme.disabled": "[red]Les fonctionnalités du plugin sont actuellement désactivées.[default]",
+  "specme.command_disabled": "[red]Cette commande est actuellement désactivée.[default]",
+  "specme.player_only": "[red]Cette commande ne peut être exécutée que par des joueurs.[default]",
+  "specme.already_spec": "[yellow]Vous êtes déjà dans l'équipe des spectateurs.[default]",
+  "specme.moved_spec": "[green]Vous avez été déplacé chez les spectateurs.[default]",
+  "specme.queued_death": "[lightred]Vous serez déplacé chez les spectateurs à votre mort.[default]",
+  "specme.queued_round_end": "[lightred]Vous serez déplacé chez les spectateurs à la fin du round.[default]",
+  "specme.cancelled_queue": "[yellow]Votre demande de passage en spectateur a été annulée.[default]",
+  "specme.no_permission": "[red]Vous n'avez pas la permission d'utiliser !spec. Utilisez [lightred]!specme[red] ou [lightred]!afk[red].[default]",
+  "specme.reloaded": "[lime]Configuration et état rechargés avec succès.[default]"
+}

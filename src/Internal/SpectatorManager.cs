@@ -35,6 +35,7 @@ public partial class SpecMe
     if (_pendingSpectators.TryRemove(player.Slot, out _))
     {
       CancelPlayerTimer(player.Slot);
+      Logger.LogPlayerAction(player, "Cancelled pending spectator request", $"Command: {context.CommandName}");
       SendReply(context, "specme.cancelled_queue");
       return;
     }
@@ -43,6 +44,7 @@ public partial class SpecMe
     if (!player.IsAlive || allowImmediateWhenAlive)
     {
       ExecuteMoveToSpectator(player);
+      Logger.LogPlayerAction(player, "Moved to Spectator immediately", $"Alive: {player.IsAlive}, AdminOverride: {allowImmediateWhenAlive}");
       SendReply(context, "specme.moved_spec");
       return;
     }
@@ -52,10 +54,12 @@ public partial class SpecMe
 
     if (Config.MoveOnRoundEndInsteadOfDeath)
     {
+      Logger.LogPlayerAction(player, "Queued to Spectator on round end", $"Command: {context.CommandName}");
       SendReply(context, "specme.queued_round_end");
     }
     else
     {
+      Logger.LogPlayerAction(player, "Queued to Spectator on death", $"Command: {context.CommandName}");
       SendReply(context, "specme.queued_death");
     }
   }
@@ -71,6 +75,7 @@ public partial class SpecMe
       if (target != null && target.IsValid)
       {
         ExecuteMoveToSpectator(target);
+        Logger.LogPlayerAction(target, "Moved to Spectator via queued trigger");
         SendPlayerMessage(target, "specme.moved_spec");
       }
       return;
@@ -83,6 +88,7 @@ public partial class SpecMe
       if (target != null && target.IsValid && target.Controller.Team != Team.Spectator)
       {
         ExecuteMoveToSpectator(target);
+        Logger.LogPlayerAction(target, "Moved to Spectator via delayed queue timer");
         SendPlayerMessage(target, "specme.moved_spec");
       }
     });

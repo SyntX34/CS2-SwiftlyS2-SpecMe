@@ -1,0 +1,13 @@
+{
+  "specme.prefix": "[green][SpecMe][default] ",
+  "specme.disabled": "[red]Plugin-Funktionen sind derzeit deaktiviert.[default]",
+  "specme.command_disabled": "[red]Dieser Befehl ist derzeit deaktiviert.[default]",
+  "specme.player_only": "[red]Dieser Befehl kann nur von Spielern ausgeführt werden.[default]",
+  "specme.already_spec": "[yellow]Du bist bereits im Zuschauerteam.[default]",
+  "specme.moved_spec": "[green]Du wurdest zu den Zuschauern verschoben.[default]",
+  "specme.queued_death": "[lightred]Du wirst nach deinem Tod zu den Zuschauern verschoben.[default]",
+  "specme.queued_round_end": "[lightred]Du wirst am Rundenende zu den Zuschauern verschoben.[default]",
+  "specme.cancelled_queue": "[yellow]Deine Zuschauer-Anfrage wurde abgebrochen.[default]",
+  "specme.no_permission": "[red]Du hast keine Berechtigung für !spec. Verwende [lightred]!specme[red] oder [lightred]!afk[red].[default]",
+  "specme.reloaded": "[lime]Konfiguration und Zustand erfolgreich neu geladen.[default]"
+}

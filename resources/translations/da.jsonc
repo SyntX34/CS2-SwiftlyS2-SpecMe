@@ -1,0 +1,13 @@
+{
+  "specme.prefix": "[green][SpecMe][default] ",
+  "specme.disabled": "[red]Plugin-funktioner er i øjeblikket deaktiveret.[default]",
+  "specme.command_disabled": "[red]Denne kommando er i øjeblikket deaktiveret.[default]",
+  "specme.player_only": "[red]Denne kommando kan kun udføres af spillere.[default]",
+  "specme.already_spec": "[yellow]Du er allerede på tilskuerholdet.[default]",
+  "specme.moved_spec": "[green]Du er blevet flyttet til tilskuer.[default]",
+  "specme.queued_death": "[lightred]Du vil blive flyttet til tilskuer ved din død.[default]",
+  "specme.queued_round_end": "[lightred]Du vil blive flyttet til tilskuer ved rundens afslutning.[default]",
+  "specme.cancelled_queue": "[yellow]Din anmodning om tilskuerstatus er blevet annulleret.[default]",
+  "specme.no_permission": "[red]Du har ikke tilladelse til at bruge !spec. Brug [lightred]!specme[red] eller [lightred]!afk[red] i stedet.[default]",
+  "specme.reloaded": "[lime]Konfiguration og tilstand genindlæst med succes.[default]"
+}

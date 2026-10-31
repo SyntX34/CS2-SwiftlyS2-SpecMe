@@ -14,12 +14,11 @@ namespace SpecMe;
 public partial class SpecMe : BasePlugin
 {
   public PluginConfig Config { get; private set; } = new();
+  public PluginLogger Logger { get; private set; }
 
   public SpecMe(ISwiftlyCore core) : base(core)
   {
-    LoadConfig();
-    RegisterCommands();
-    RegisterEvents();
+    Logger = new PluginLogger(core);
   }
 
   public override void ConfigureSharedInterface(IInterfaceManager interfaceManager) {}
@@ -30,10 +29,12 @@ public partial class SpecMe : BasePlugin
     LoadConfig();
     RegisterCommands();
     RegisterEvents();
+    Logger.LogSystem($"Plugin loaded (hotReload: {hotReload})");
   }
 
   public override void Unload()
   {
+    Logger.LogSystem("Plugin unloaded");
     UnregisterEvents();
     UnregisterCommands();
     ClearAllPendingQueues();
