@@ -1,0 +1,13 @@
+{
+  "specme.prefix": "[green][SpecMe][default] ",
+  "specme.disabled": "[red]Plugin features are currently disabled.[default]",
+  "specme.command_disabled": "[red]This command is currently disabled.[default]",
+  "specme.player_only": "[red]This command can only be executed by players.[default]",
+  "specme.already_spec": "[yellow]You are already in the spectator team.[default]",
+  "specme.moved_spec": "[green]You have been moved to Spectator.[default]",
+  "specme.queued_death": "[lightred]You will be moved to Spectator upon your death.[default]",
+  "specme.queued_round_end": "[lightred]You will be moved to Spectator at the end of the round.[default]",
+  "specme.cancelled_queue": "[yellow]Your pending spectator request has been cancelled.[default]",
+  "specme.no_permission": "[red]You do not have permission to use !spec. Use [lightred]!specme[red] or [lightred]!afk[red] instead.[default]",
+  "specme.reloaded": "[lime]Configuration and state reloaded successfully.[default]"
+}

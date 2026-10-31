@@ -1,0 +1,20 @@
+{
+  // Whether the plugin functionality is enabled.
+  "Enabled": true,
+  // Chat message prefix with bracket color tokens (e.g. [green][SpecMe][default] ).
+  "ChatPrefix": "[green][SpecMe][default] ",
+  // Whether !spec is restricted to admins with permission flags.
+  "SpecAdminOnly": true,
+  // Permission flag required for !spec when SpecAdminOnly is true (empty string allows all admins/players).
+  "SpecAdminFlag": "",
+  // Whether !afk command is enabled for players.
+  "EnableAfkCommand": true,
+  // Whether !specme command is enabled for players.
+  "EnableSpecMeCommand": true,
+  // When a player executes !specme or !afk while alive, should they be moved to spectator on round end instead of on death? (true = round end, false = on death)
+  "MoveOnRoundEndInsteadOfDeath": false,
+  // Delay in seconds before moving player to spectator once death or round end trigger fires (0 = immediate).
+  "MoveDelaySeconds": 0.5,
+  // Whether to automatically reload the plugin and its configuration on map changes.
+  "AutoReloadOnMapChange": true
+}
