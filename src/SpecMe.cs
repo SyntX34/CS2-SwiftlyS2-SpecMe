@@ -6,7 +6,7 @@ namespace SpecMe;
 
 [PluginMetadata(
   Id = "SpecMe", 
-  Version = "1.1.0", 
+  Version = "1.1.1", 
   Name = "SpecMe", 
   Author = "SyntX34", 
   Description = "Let players go to Spectator when AFK, with configurable admin controls and death/round-end transitions."

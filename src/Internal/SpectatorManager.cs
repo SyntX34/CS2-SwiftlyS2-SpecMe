@@ -40,11 +40,13 @@ public partial class SpecMe
       return;
     }
 
+    var isPlayerAlive = IsPlayerTrulyAlive(player);
+
     /* If the player is dead or immediate move is granted, execute switch immediately */
-    if (!player.IsAlive || allowImmediateWhenAlive)
+    if (!isPlayerAlive || allowImmediateWhenAlive)
     {
       ExecuteMoveToSpectator(player);
-      Logger.LogPlayerAction(player, "Moved to Spectator immediately", $"Alive: {player.IsAlive}, AdminOverride: {allowImmediateWhenAlive}");
+      Logger.LogPlayerAction(player, "Moved to Spectator immediately", $"Alive: {isPlayerAlive}, AdminOverride: {allowImmediateWhenAlive}");
       SendReply(context, "specme.moved_spec");
       return;
     }
@@ -62,6 +64,35 @@ public partial class SpecMe
       Logger.LogPlayerAction(player, "Queued to Spectator on death", $"Command: {context.CommandName}");
       SendReply(context, "specme.queued_death");
     }
+  }
+
+  /* Checks whether player is alive using both player state and controller pawn health/lifestate */
+  private bool IsPlayerTrulyAlive(IPlayer player)
+  {
+    if (!player.IsValid || !player.IsAlive)
+    {
+      return false;
+    }
+
+    var controller = player.Controller;
+    if (controller != null && controller.IsValid)
+    {
+      if (!controller.PawnIsAlive || controller.PawnHealth == 0)
+      {
+        return false;
+      }
+    }
+
+    var pawn = player.PlayerPawn;
+    if (pawn != null && pawn.IsValid)
+    {
+      if (pawn.Health <= 0 || pawn.LifeState != 0)
+      {
+        return false;
+      }
+    }
+
+    return true;
   }
 
   /* Dispatches player transition to spectator with scheduled cancellation control */

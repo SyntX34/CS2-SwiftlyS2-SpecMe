@@ -11,3 +11,4 @@
   "specme.no_permission": "[red]Nincs jogosultságod a !spec használatához. Használd a [lightred]!specme[red] vagy [lightred]!afk[red] parancsot.[default]",
   "specme.reloaded": "[lime]A konfiguráció és az állapot sikeresen újratöltve.[default]"
 }
+

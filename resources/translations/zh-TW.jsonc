@@ -11,3 +11,4 @@
   "specme.no_permission": "[red]你沒有權限使用 !spec。請改用 [lightred]!specme[red] 或 [lightred]!afk[red]。[default]",
   "specme.reloaded": "[lime]配置與狀態已成功重新載入。[default]"
 }
+

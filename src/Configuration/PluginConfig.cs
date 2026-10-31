@@ -31,3 +31,4 @@ public sealed class PluginConfig
   [Description("Whether to automatically reload the plugin and its configuration on map changes.")]
   public bool AutoReloadOnMapChange { get; set; } = true;
 }
+

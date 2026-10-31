@@ -11,3 +11,4 @@
   "specme.no_permission": "[red]Du hast keine Berechtigung für !spec. Verwende [lightred]!specme[red] oder [lightred]!afk[red].[default]",
   "specme.reloaded": "[lime]Konfiguration und Zustand erfolgreich neu geladen.[default]"
 }
+
